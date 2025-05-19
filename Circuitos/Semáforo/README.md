@@ -13,3 +13,30 @@
 | Vários     | Jumpers (Fios de conexão) | Conectam os pinos do Arduino aos componentes   |
 
 
+## 🚦 Descrição do Funcionamento do Projeto
+
+Este projeto simula um **sistema de semáforo para pedestres e carros**, controlado por um **Arduino Uno** com dois botões de solicitação de travessia (um para cada lado da rua).
+
+### 🔧 Lógica de Funcionamento
+
+- **Inicialização (`setup`)**
+  - O semáforo do carro começa com o **LED verde aceso**.
+  - Os pedestres começam com **LED vermelho aceso**, impedindo a travessia.
+  - Os botões dos pedestres utilizam **resistores de pull-up internos** do Arduino.
+
+---
+
+### 🚶‍♂️ Travessia de Pedestres
+
+Quando **qualquer botão é pressionado** (`botaoPedestre1` ou `botaoPedestre2`):
+
+1. 🟡 **Carro recebe sinal amarelo por 2 segundos**.
+2. 🔴 **Carro recebe sinal vermelho**.
+3. 🟢 **Ambos os pedestres recebem sinal verde** (LED verde aceso).
+4. ⏱️ Pedestres têm **5 segundos para atravessar**.
+5. ⚠️ Nos 2,5 segundos finais, os LEDs verdes dos pedestres piscam (alerta).
+6. 🔴 LEDs vermelhos dos pedestres acendem novamente.
+7. 🟢 O carro recebe sinal verde de novo.
+
+---
+
