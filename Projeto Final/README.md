@@ -1,3 +1,7 @@
+
+![Captura de Tela (35)](https://github.com/user-attachments/assets/d11ea3fb-0202-4ee9-b5a0-6050e99dd7e8)
+
+
 ## 🧰 Componentes Utilizados no Circuito
 
 | Quantidade | Componente                     | Descrição                                                                 |
@@ -14,32 +18,24 @@
 
 ---
 
-## 🔌 Conexões dos Pinos no Arduino
+### 🔌 Conexões dos Componentes
 
-| Pino Digital | Componente Conectado      |
-|--------------|----------------------------|
-| D2           | LED vermelho               |
-| D3           | LED vermelho               |
-| D4           | LED vermelho               |
-| D5           | LED amarelo                |
-| D6           | LED verde                  |
-| D7           | LED verde                  |
-| D8           | Buzzer                     |
-| D9           | Pino Trigger do HC-SR04    |
-| D10          | Pino Echo do HC-SR04       |
-| GND          | Terra (protoboards e sensor) |
-| 5V           | Alimentação para os sensores |
+| Componente       | Pino Arduino | Observações                   |
+|------------------|--------------|-------------------------------|
+| HC-SR04 (TRIG)   | D3           |                                |
+| HC-SR04 (ECHO)   | D2           |                                |
+| Buzzer           | D7           | Saída de tom (tone)           |
+| LED 1 (vermelho) | D8           | Com resistor de 220Ω          |
+| LED 2 (vermelho) | D9           | Com resistor de 220Ω          |
+| LED 3 (amarelo)  | D10          | Com resistor de 220Ω          |
+| LED 4 (verde)    | D11          | Com resistor de 220Ω          |
+| LED 5 (verde)    | D12          | Com resistor de 220Ω          |
+| LED 6 (verde)    | D13          | Com resistor de 220Ω          |
+| GND (comum)      | GND          | Em todos os negativos         |
+| VCC (sensor)     | 5V           | Para o HC-SR04                |
+
 
 ---
 
-## 🧠 Função Geral do Circuito
-
-Este projeto provavelmente tem como objetivo:
-
-- **Detectar a presença ou distância de um objeto** usando o **sensor HC-SR04**.
-- **Acender os LEDs em sequência ou nível** com base na distância medida.
-- **Emitir alerta sonoro** com o buzzer quando um limite de proximidade é atingido (ex: objeto muito perto).
-
-O circuito é bastante comum em **sistemas de estacionamento**, **medidores de distância visuais**, ou **alertas de aproximação**.
 
 
